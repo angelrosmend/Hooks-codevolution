@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
+import SongList from './components/SongList';
 import ComponentC from './hooks/useContext/ComponentC';
+import CounterOne from './hooks/useReducer/CounterOne';
+import CounterTwo from './hooks/useReducer/CounterTwo';
 
 
 export const UserContext = React.createContext()
@@ -9,12 +12,7 @@ export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      <h1>Import a hook to begin testing</h1>
-      <UserContext.Provider value={'React'}>
-        <ChannelContext.Provider value={'Hooks'}>
-        <ComponentC/>
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+     <CounterTwo/>
     </div>
   );
 }
